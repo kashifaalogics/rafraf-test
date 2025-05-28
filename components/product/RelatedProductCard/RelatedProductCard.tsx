@@ -11,7 +11,7 @@ import useTranslation from "next-translate/useTranslation";
 import { IMAGES_STORAGE_URL } from "@framework/const";
 import manuImg from "../../../assets/data/manufacturersImages.json";
 
-import { Rating } from "@components/ui";
+import { Rating, Image } from "@components/ui";
 import { useCartItems, useViewport, useSearchEngine } from "@common/hooks";
 import { useRouter } from "next/router";
 import { RootState } from "@common/store";
@@ -267,7 +267,7 @@ const ProductCardGrid: FunctionComponent<Props> = ({
           {product.manufacturer ? (
             <>
               <div className="col-span-2 productCardVendorLogo">
-                <img
+                <Image
                   src={
                     IMAGES_STORAGE_URL +
                     manuImg[product.manufacturer as keyof typeof manuImg]
@@ -331,7 +331,7 @@ const ProductCardGrid: FunctionComponent<Props> = ({
                                 }
                               }
                             }
-                      
+
                             }
                           }
                         }
@@ -400,7 +400,7 @@ const ProductCardGrid: FunctionComponent<Props> = ({
                                 }
                               }
                             }
-                      
+
                             }
                           }
                         }

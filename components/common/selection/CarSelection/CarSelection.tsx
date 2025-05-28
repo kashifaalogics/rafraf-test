@@ -277,7 +277,7 @@ const CarSelection = () => {
                 </div>
                 <div className="px-2">
                   {carSelection.selectedCarBrand?.name === t("home:MGForm") ? (
-                    <img
+                    <Image
                       style={{
                         height: "50px",
                         width: "auto",
@@ -287,7 +287,7 @@ const CarSelection = () => {
                     />
                   ) : carSelection.selectedCarBrand?.name ===
                     t("home:hondaForm") ? (
-                    <img
+                    <Image
                       style={{
                         height: "50px",
                         width: "auto",
@@ -429,7 +429,7 @@ const CarSelection = () => {
                 </div>
                 <div className="px-2">
                   {carSelection.selectedCarBrand?.name === t("home:MGForm") ? (
-                    <img
+                    <Image
                       style={{
                         height: "50px",
                         width: "auto",
@@ -439,7 +439,7 @@ const CarSelection = () => {
                     />
                   ) : carSelection.selectedCarBrand?.name ===
                     t("home:hondaForm") ? (
-                    <img
+                    <Image
                       style={{
                         height: "50px",
                         width: "auto",

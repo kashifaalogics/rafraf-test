@@ -4,6 +4,7 @@ import { Label } from "@components/typography";
 import useLangDirection from "@utils/language/useLangDirection";
 import paymentLabel from "constants/payment-labels";
 import { API_URL } from "@framework/const";
+import { Image } from "@components/ui";
 
 interface Props {
   cartV2: any;
@@ -42,7 +43,7 @@ function AvaliblePaymentMethods({ cartV2 }: Props) {
                   <p className="my-auto">{paymentLabel(rtl, p.code)}</p>{" "}
                 </div>{" "}
                 {p.code === "moyasar_apple_pay" ? (
-                  <img
+                  <Image
                     src="../images/brands/apple-pay.svg"
                     className="h-6 md:h-4 px-4"
                     alt=""
@@ -54,17 +55,17 @@ function AvaliblePaymentMethods({ cartV2 }: Props) {
 
               {p.title === "Credit Card: Mada, Visa, MasterCard" ? (
                 <div className="flex gap-3">
-                  <img
+                  <Image
                     src="../images/brands/master-card.svg"
                     alt=""
                     className="w-12"
                   />
-                  <img
+                  <Image
                     src="../images/brands/visa.svg"
                     alt=""
                     className="w-12"
                   />
-                  <img
+                  <Image
                     src="../images/brands/mada.svg"
                     alt=""
                     className="w-12"
