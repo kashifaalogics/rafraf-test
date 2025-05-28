@@ -57,7 +57,7 @@ const Image: FunctionComponent<Props> = ({
         zIndex: 49,
       }}
     >
-      <img
+      <Image
         alt={rest.alt || imgSrc.toString()}
         src={imgSrc as string}
         decoding="async"
